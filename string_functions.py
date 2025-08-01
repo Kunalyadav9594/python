@@ -29,3 +29,13 @@ txt = "Hello, World!"
 x = txt.center(20, '*')
 print(x)  # Output: "*****Hello, World!*****"
 # The center() method can also take a second argument to specify a character to pad the string with.
+# count() method
+txt = "I love apples, apple pie, and apple juice"
+x = txt.count("apple")
+print(x)  # Output: 3
+# The count() method returns the number of occurrences of a substring in the string.
+
+txt = "I love apple, apple pie, apple juice"
+x = txt.count("apple", 10, 30)
+print(x)  # Output: 2
+# The count() method can also take optional start and end parameters to limit the search to a specific range.
