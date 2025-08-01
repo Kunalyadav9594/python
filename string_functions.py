@@ -39,3 +39,9 @@ txt = "I love apple, apple pie, apple juice"
 x = txt.count("apple", 10, 30)
 print(x)  # Output: 2
 # The count() method can also take optional start and end parameters to limit the search to a specific range.
+
+# encode() method
+txt = "Hello, World!"
+x = txt.encode()
+print(x)  # Output: b'Hello, World!'
+# The encode() method encodes the string into bytes using the default encoding (UTF-8).
