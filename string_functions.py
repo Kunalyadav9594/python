@@ -72,4 +72,17 @@ x = txt.endswith("my world", 5, 11)
 print(x)  # Output: False
 # The endswith() method can also take a start and end parameter to limit the search to a specific range.
 
+# expandtabs() method
+txt = "H\te\tl\tl\to"
+x = txt.expandtabs(2)
+print(x)  # Output: "H  e  l  l  o"
+# The expandtabs() method replaces all tab characters in the string with spaces. The number of spaces is determined 
+# by the parameter passed to the method (default is 8).
+
+# find() method
+txt = "Hello, welcome to my world"
+x = txt.find("welcome")
+print(x)  # Output: 7
+# The find() method returns the lowest index of the substring if found in the string. If not found, it returns -1.
+
 
