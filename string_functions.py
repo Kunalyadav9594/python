@@ -60,4 +60,16 @@ x = txt.endswith(".")
 print(x)  # Output: False
 # The endswith() method checks if the string ends with a specified suffix and returns True or False.
 
+# check if the string endswith the phrase "my world"
+txt = "my world"
+x = txt.endswith("my world")
+print(x)  # Output: True
+# The endswith() method can also take a start and end parameter to limit the search to a specific range.
+
+# check if position 5 to 11 ends with "my world"
+txt = "Hello, welcome to my world"
+x = txt.endswith("my world", 5, 11)
+print(x)  # Output: False
+# The endswith() method can also take a start and end parameter to limit the search to a specific range.
+
 
