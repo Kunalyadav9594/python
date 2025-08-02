@@ -85,4 +85,11 @@ x = txt.find("welcome")
 print(x)  # Output: 7
 # The find() method returns the lowest index of the substring if found in the string. If not found, it returns -1.
 
+# format() method
+txt = "For only {price:.2f} dollars!"
+x = txt.format(price=49)
+print(x)  # Output: "For only 49.00 dollars!"
+# The format() method formats the specified value(s) and inserts them into the string. It can take multiple parameters 
+# and format them according to the specified format.
+
 
