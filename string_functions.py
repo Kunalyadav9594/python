@@ -45,3 +45,19 @@ txt = "Hello, World!"
 x = txt.encode()
 print(x)  # Output: b'Hello, World!'
 # The encode() method encodes the string into bytes using the default encoding (UTF-8).
+
+# These examples uses ascii encoding, and a character that cannot be encoded, showing the result with different errors:
+txt = "My name is Ståle"
+print(txt.encode(encoding='ascii', errors='backslashreplace'))  # Output: b'My name is St\\xe5le'
+print(txt.encode(encoding='ascii', errors='ignore'))  # Output: b'My name is Stle'
+print(txt.encode(encoding='ascii', errors='replace'))  # Output: b'My name is St?le'
+print(txt.encode(encoding='ascii', errors='xmlcharrefreplace')) 
+ # Output: b'My name is St&#229;le'
+# The encode() method can take an encoding type and an error handling scheme as parameters.
+
+x = "Hello, welcome to my world"
+x = txt.endswith(".")
+print(x)  # Output: False
+# The endswith() method checks if the string ends with a specified suffix and returns True or False.
+
+
