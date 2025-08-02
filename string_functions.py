@@ -92,4 +92,10 @@ print(x)  # Output: "For only 49.00 dollars!"
 # The format() method formats the specified value(s) and inserts them into the string. It can take multiple parameters 
 # and format them according to the specified format.
 
+# format() method with multiple parameters
+txt1 = "My name is {fname}, I am {age} years old.".format(fname="Kunal", age= 23)
+txt2 = "My name is {0}, I am {1} years old.".format("Kunal", 23)
+print(txt1)  # Output: "My name is Kunal, I am 23 years old."
+print(txt2)  # Output: "My name is Kunal, I am 23 years old."
+
 
