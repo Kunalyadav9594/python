@@ -138,6 +138,10 @@ print(txt.format(13800000000))
 txt = "The universe is {:_} years old."
 print(txt.format(13800000000))
 
+# Use "b" to format the number as a binary number:
+txt = "The number in binary is {:b}."
+print(txt.format(5))  # Output: "The number in binary is 101."
+
 
 
 
