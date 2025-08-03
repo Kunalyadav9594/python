@@ -142,6 +142,11 @@ print(txt.format(13800000000))
 txt = "The number in binary is {:b}."
 print(txt.format(5))  # Output: "The number in binary is 101."
 
+#Use "d" to convert a number, in this case a binary number, into decimal number format:
+txt = "We have {:d} chickens."
+print(txt.format(0b101))
+# Output: "We have 5 chickens."
+
 
 
 
