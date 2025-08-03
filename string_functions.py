@@ -104,32 +104,40 @@ txt = "We have {:<8} cows."
 print(txt.format(49))
 
 #To demonstrate, we insert the number 8 to set the available space for the value to 8 characters.
-
 #Use ">" to right-align the value:
-
 txt = "We have {:>8} chickens."
 print(txt.format(49))
 
 #To demonstrate, we insert the number 8 to set the available space for the value to 8 characters.
-
 #Use "^" to center-align the value:
-
 txt = "We have {:^8} chickens."
 print(txt.format(49))
 
 #To demonstrate, we insert the number 8 to specify the available space for the value.
-
 #Use "=" to place the plus/minus sign at the left most position:
-
 txt = "The temperature is {:=8} degrees celsius."
-
 print(txt.format(-5))
 
 #Use "+" to always indicate if the number is positive or negative:
-
 txt = "The temperature is between {:+} and {:+} degrees celsius."
-
 print(txt.format(-3, 7))
+
+#Use "-" to always indicate if the number is negative (positive numbers are displayed without any sign):
+txt = "The temperature is between {:-} and {:-} degrees celsius."
+print(txt.format(-3, 7))
+
+#Use " " (a space) to insert a space before positive numbers and a minus sign before negative numbers:
+txt = "The temperature is between {: } and {: } degrees celsius."
+print(txt.format(-3, 7))
+
+#Use "," to add a comma as a thousand separator:
+txt = "The universe is {:,} years old."
+print(txt.format(13800000000))
+
+#Use "_" to add a underscore character as a thousand separator:
+txt = "The universe is {:_} years old."
+print(txt.format(13800000000))
+
 
 
 
