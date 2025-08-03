@@ -177,5 +177,22 @@ print(txt.format(0.25))
 txt = "You scored {:.0%}"
 print(txt.format(0.25))
 
+# index() method
+txt = "Hello, welcome to my world"
+x = txt.index("welcome")
+print(x)  # Output: 7
+# The index() method returns the lowest index of the substring if found in the string. If not found, it raises a ValueError.
+
+# Where in the text is the first occurrence of the letter "e"?
+txt = "Hello, welcome to my world"
+x = txt.index("e")
+print(x)  # Output: 1
+
+# The index() method can also take optional start and end parameters to limit the search to a specific range.
+txt = "Hello, welcome to my world"
+x = txt.index("e", 5, 10)
+print(x)  # Output: 8
+
+
 
 
