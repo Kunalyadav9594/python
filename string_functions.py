@@ -98,4 +98,38 @@ txt2 = "My name is {0}, I am {1} years old.".format("Kunal", 23)
 print(txt1)  # Output: "My name is Kunal, I am 23 years old."
 print(txt2)  # Output: "My name is Kunal, I am 23 years old."
 
+# Formattaing types
+# :<
+txt = "We have {:<8} cows."
+print(txt.format(49))
+
+#To demonstrate, we insert the number 8 to set the available space for the value to 8 characters.
+
+#Use ">" to right-align the value:
+
+txt = "We have {:>8} chickens."
+print(txt.format(49))
+
+#To demonstrate, we insert the number 8 to set the available space for the value to 8 characters.
+
+#Use "^" to center-align the value:
+
+txt = "We have {:^8} chickens."
+print(txt.format(49))
+
+#To demonstrate, we insert the number 8 to specify the available space for the value.
+
+#Use "=" to place the plus/minus sign at the left most position:
+
+txt = "The temperature is {:=8} degrees celsius."
+
+print(txt.format(-5))
+
+#Use "+" to always indicate if the number is positive or negative:
+
+txt = "The temperature is between {:+} and {:+} degrees celsius."
+
+print(txt.format(-3, 7))
+
+
 
