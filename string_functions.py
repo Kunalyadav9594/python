@@ -193,6 +193,11 @@ txt = "Hello, welcome to my world"
 x = txt.index("e", 5, 10)
 print(x)  # Output: 8
 
+# If the value is not found, the find() method returns -1, while the index() method raises an exception.
+txt = "Hello, welcome to my world"
+print(txt.find("q")) # Output: -1
+# print(txt.index("q"))  # Raises ValueError: substring not found
+
 
 
 
