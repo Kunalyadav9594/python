@@ -147,6 +147,10 @@ txt = "We have {:d} chickens."
 print(txt.format(0b101))
 # Output: "We have 5 chickens."
 
+# use "e" to format the number in scientific notation:
+txt = "The number in scientific notation is {:e}."
+print(txt.format(123456789))  # Output: "The number in scientific notation is 1.234568e+08"
+
 
 
 
