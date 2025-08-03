@@ -151,6 +151,16 @@ print(txt.format(0b101))
 txt = "The number in scientific notation is {:e}."
 print(txt.format(123456789))  # Output: "The number in scientific notation is 1.234568e+08"
 
+#Use "F" to convert a number into a fixed point number, but display inf and nan as INF and NAN:
+x = float('inf')
+
+txt = "The price is {:F} dollars."
+print(txt.format(x))
+
+#same example, but with a lower case f:
+txt = "The price is {:f} dollars."
+print(txt.format(x))
+
 
 
 
