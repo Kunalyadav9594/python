@@ -165,6 +165,10 @@ print(txt.format(x))
 txt = "The octal version of {0} is {0:o}"
 print(txt.format(10))
 
+#Use "x" to convert the number into Hex format:
+txt = "The Hexadecimal version of {0} is {0:x}"
+print(txt.format(255))
+
 
 
 
