@@ -252,7 +252,11 @@ txt = "Hello,\o101"
 print(txt)
 # Output: "Hello, A" (octal value 101 corresponds to 'A', but the 'o' is not a valid escape character, so it is treated as a normal character)
 
-
+# F-strings (formatted string literals)
+name = "Kunal"
+age = 23
+txt = f"My name is {name} and I am {age} years old."
+print(txt)  # Output: "My name is Kunal and I am 23 years old."
 
 
 
