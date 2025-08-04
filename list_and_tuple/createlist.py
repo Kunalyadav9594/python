@@ -13,3 +13,8 @@ b = ["ford", "bmw", "volvo"]
 a.append(b)  # Appends the list b to the end of list a
 print(a)
 # Output: ['apple', 'banana', 'cherry', ['ford', 'bmw', 'volvo']]
+
+# clearing a list
+fruits = ["apple", "banana", "cherry"]
+fruits.clear()  # Removes all items from the list
+print(fruits)
