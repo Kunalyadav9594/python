@@ -211,5 +211,48 @@ myvars = {"name": "Kunal", "age": 23}
 txt = "Happpy birthday {name} you are now on level {age}!"
 print(txt.format_map(myvars))  # Output: "Happpy birthday Kunal you are now on level 23!"
 
+# isascii() method
+txt = "company123"
+print(txt.isascii())  # Output: True
+
+# Escape characters
+# single quote
+txt = 'It\'s alright.'
+print(txt)  # Output: "It's alright."
+# double quote
+txt = "He said, \"Hello!\""
+print(txt)  # Output: 'He said, "Hello!"'   
+# backslash
+txt = "This will insert one \\ (backslash)."
+print(txt)  # Output: "This will insert one \ (backslash)."
+# newline
+txt = "Hello,\nWorld!"  
+print(txt)  # Output: "Hello,\nWorld!" (prints "Hello," on one line and "World!" on the next line)
+# carriage return
+txt = "Hello,\rWorld!"
+print(txt)  # Output: "World!" (overwrites "Hello," with "World!")
+# tab
+txt = "Hello,\tWorld!"
+print(txt)# Output: "Hello,    World!" (inserts a tab space between "Hello," and "World!")
+# vertical tab
+txt = "Hello,\vWorld!"
+print(txt)  # Output: "Hello, World!" (inserts a vertical tab space)
+# form feed
+txt = "Hello,\fWorld!"
+print(txt)
+# Output: "Hello, World!" (inserts a form feed space)
+# octal value
+txt = "Hello,\101"
+print(txt)  # Output: "Hello, A" (octal value 101 corresponds to 'A')
+# hexadecimal value
+txt = "Hello,\x41"
+print(txt)  # Output: "Hello, A" (hexadecimal value 41 corresponds to 'A')
+# octal value with escape character
+txt = "Hello,\o101"
+print(txt)
+# Output: "Hello, A" (octal value 101 corresponds to 'A', but the 'o' is not a valid escape character, so it is treated as a normal character)
+
+
+
 
 
