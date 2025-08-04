@@ -198,6 +198,18 @@ txt = "Hello, welcome to my world"
 print(txt.find("q")) # Output: -1
 # print(txt.index("q"))  # Raises ValueError: substring not found
 
+# isalnum() method
+txt = "Company12"
+print(txt.isalnum())  # Output: True
+
+# isalpha() method
+txt = "CompanyX"
+print(txt.isalpha())  # Output: True
+
+# format_map() method
+myvars = {"name": "Kunal", "age": 23}
+txt = "Happpy birthday {name} you are now on level {age}!"
+print(txt.format_map(myvars))  # Output: "Happpy birthday Kunal you are now on level 23!"
 
 
 
