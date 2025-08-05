@@ -76,3 +76,16 @@ print(fruits)  # Remaining items in the list
 fruits.pop()  # Removes and returns the last item in the list
 print(fruits)
 # Output: ['apple'] 
+
+# pop() method
+# Remove the "banana" element of the fruit list.
+fruits = ["apple", "banana", "cherry"]
+fruits.pop(1)  # Removes the item at index 1
+print(fruits)
+# Output: ['apple', 'cherry']
+
+# sort the list reverse
+cars = ["Ford", "BMW", "Volvo"]
+cars.sort(reverse=True)  # Sorts the list in descending order
+print(cars)
+# Output: ['Volvo', 'Ford', 'BMW']
