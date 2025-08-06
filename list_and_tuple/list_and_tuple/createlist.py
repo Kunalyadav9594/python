@@ -89,3 +89,4 @@ cars = ["Ford", "BMW", "Volvo"]
 cars.sort(reverse=True)  # Sorts the list in descending order
 print(cars)
 # Output: ['Volvo', 'Ford', 'BMW']
+# git pull origin main --rebase
