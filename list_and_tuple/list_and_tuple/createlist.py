@@ -89,35 +89,3 @@ cars = ["Ford", "BMW", "Volvo"]
 cars.sort(reverse=True)  # Sorts the list in descending order
 print(cars)
 # Output: ['Volvo', 'Ford', 'BMW']
-
-# A function that returns the length of the value of the list
-def myFunc(e):
-    return len(e)
-
-cars =["Ford", "Mitsubishi", "BMW", "Volvo"]
-cars.sort(key=myFunc)  # Sorts the list based on the length of each string
-print(cars)
-# Output: ['BMW', 'Ford', 'Volvo', 'Mitsubishi']
-
-# Sort a list os dictionaries on the 'year' value of the dictionaries:
-# A function tjat returns the 'year' value:
-def myFunc(e):
-    return e['year']
-cars = [
-    {'car' : 'ford', 'year' : 2005},
-    {'car':"mitsubishi", 'year': 2000},
-    {'car':"bmw", 'year': 2010},
-    {'car':"volvo", 'year': 2015}
-]
-cars.sort(key=myFunc)  # Sorts the list of dictionaries by the 'year' key
-print(cars)
-# Output: [{'car': 'mitsubishi', 'year': 2000}, {'car': 'ford', 'year': 2005}, {'car': 'bmw', 'year': 2010}, {'car': 'volvo', 'year': 2015}]
-
-#  sort the list by the length of the values and reversed:
-# A function that returns the length of the value:
-def myFunc(e):
-    return len(e)
-cars = ["Ford", "Mitsubishi", "BMW", "Volvo"]
-cars.sort(key=myFunc, reverse=True)  # Sorts the list based on the length of each string in descending order
-print(cars)
-# Output: ['Mitsubishi', 'Volvo', 'Ford', 'BMW']
