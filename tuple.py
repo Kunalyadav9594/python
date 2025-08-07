@@ -18,3 +18,7 @@ print(x)
 thistuple = ("apple",)
 print(type(thistuple))
 # Output: <class 'tuple'>
+# Note: A tuple with one item must have a comma after the item
+thistuple = ("apple")
+print(type(thistuple))
+# Output: <class 'str'>  # This is a string, not a tuple
