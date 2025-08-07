@@ -189,3 +189,20 @@ tuple2 = (1, 2, 3)
 tuple3 = tuple1 + tuple2
 print(tuple3)
 # Output: ('a', 'b', 'c', 1, 2, 3)    
+
+# Tuple() methods
+# count() method
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.count(5)  # Returns the number of times 5 appears in the tuple
+print(x)
+# Output: 2
+# index() method
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x = thistuple.index(7)
+print(x)  # Returns the index of the first occurrence of 7
+# Output: 2
+# index() method
+thistuple = (1, 3, 7, 8, 7, 5, 4, 6, 8, 5)
+x =thistuple.index(8)
+print(x)  # Returns the index of the first occurrence of 8
+# Output: 3
