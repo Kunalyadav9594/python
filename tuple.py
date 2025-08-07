@@ -175,4 +175,17 @@ while i < len(thistuple):
 # apple
 # banana
 # cherry
-    
+# 
+# Multiply tuples
+# If you want to multiply the content of a tuple a given number of times, you can use the * operator
+# This example creates a new tuple with the content of the original tuple repeated 2 times
+thistuple = ("apple", "banana", "cherry")
+mytuple = thistuple * 2
+print(mytuple)
+# Output: ('apple', 'banana', 'cherry', 'apple', 'banana', 'cherry')
+# Join two tuples
+tuple1 = ("a", "b" , "c")
+tuple2 = (1, 2, 3)
+tuple3 = tuple1 + tuple2
+print(tuple3)
+# Output: ('a', 'b', 'c', 1, 2, 3)    
