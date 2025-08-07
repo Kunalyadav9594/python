@@ -112,3 +112,55 @@ y.remove("banana")  # Remove 'banana' from the list
 thistuple = tuple(y)  # Convert list back to tuple
 print(thistuple)
 # Output: ('apple', 'cherry')
+# Deleting a tuple
+thistuple = ("apple", "banana", "cherry")
+del thistuple  # Deletes the entire tuple
+# print(thistuple) 
+ # This will raise an error because thistuple is deleted
+
+# Finding items in a tuple
+thistuple = ("apple", "banana", "cherry")
+x = thistuple.index("banana")  # Returns the index of the first occurrence of "banana"
+print(x)
+# Output: 1
+
+# Unpacking a tuple
+thistuple = ("apple", "banana", "cherry")
+(a, b, c) = thistuple
+print(a)  # Output: apple
+print(b)  # Output: banana
+print(c)  # Output: cherry
+
+fruits = ("apple", "banana", "orange")
+(green, yellow, orange) = fruits
+print(green) # Output: apple
+print(yellow) # Output: banana
+print(orange) # Output: orange
+
+# Using an asterisk to unpack
+thistuple = ("apple", "banana", "cherry", "orange")
+(a, *b) = thistuple
+print(a)  # Output: apple
+print(b)  # Output: ['banana', 'cherry', 'orange']
+print(type(b))  # Output: <class 'list'>  # b is a list
+
+# Loop through a tuple
+thistuple = ("apple", "banana", "cherry")
+for fruit in thistuple:
+    print(fruit)
+    print(type(fruit))  # Output: <class 'str'>  # Each fruit is a string
+
+# Loop through the index numbers
+# You can also loop through the tuple items by referring to their index numbers
+# Use the range() and len() functions to create a suitable iterable
+thistuple = ("apple", "banana", "cherry")
+for i in range(len(thistuple)):
+    print(thistuple[i])
+    print(type(thistuple[i]))
+# Output:
+# apple
+# <class 'str'>
+# banana
+# <class 'str'>
+# cherry
+# <class 'str'>
