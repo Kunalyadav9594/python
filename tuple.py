@@ -13,3 +13,4 @@ thistuple = ("apple", "banana", "cherry")
 x = len(thistuple)
 print(x)
 # Output: 3
+
