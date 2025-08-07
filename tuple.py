@@ -14,3 +14,7 @@ x = len(thistuple)
 print(x)
 # Output: 3
 
+# create tuple with one item
+thistuple = ("apple",)
+print(type(thistuple))
+# Output: <class 'tuple'>
