@@ -164,3 +164,15 @@ for i in range(len(thistuple)):
 # <class 'str'>
 # cherry
 # <class 'str'>
+
+# Using a while loop
+thistuple = ("apple", "banana", "cherry")
+i = 0
+while i < len(thistuple):
+    print(thistuple[i])
+    i = i + 1
+# Output:
+# apple
+# banana
+# cherry
+    
