@@ -372,6 +372,15 @@ print(x)
 print(cars)
 # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'white'}
 
+# update() - Updates the dictionary with the specified key-value pairs
+cars = {
+    "brand": "Ford",    
+    "model": "Mustang",
+    "year": 1964
+}
+cars .update({"color":"White"})
+print(cars)
+# Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'White'}
 
 
 
