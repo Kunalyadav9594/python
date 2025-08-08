@@ -275,3 +275,21 @@ for x,obj in myfamily.items():
         # child3
         # name : Linus
         # year : 2011
+
+# Dictionary Methods
+# clear() - Removes all items from the dictionary
+cars = {
+    "brand": "Ford",
+    "model": "Mustang", 
+    "year": 1964
+}
+cars.clear()  # Empties the dictionary
+print(cars)  # Output: {}
+
+
+
+
+
+
+
+
