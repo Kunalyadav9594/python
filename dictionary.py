@@ -64,4 +64,30 @@ print(car.keys())
 car["year"] = 2020  # Changing the value of an existing key
 print(car)
 # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2020, 'color': 'red'}
+# Update the dictionary
+car.update({"year": 2021, "color": "blue"})
+print(car)
+# Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 2021, 'color': 'blue'}
+
+# Add dictionary items
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict["color"] = "red"  # Adding a new key-value pair
+print(thisdict)
+# Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'red'}
+
+# Removing Dictionary Items
+# The pop() method removes the item with the specified key and returns its value
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.pop("model")  # Removes the item with key 'model'
+print(thisdict)
+# Output: {'brand': 'Ford', 'year': 1964}
+
 
