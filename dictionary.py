@@ -225,3 +225,22 @@ myfamily = {
 }
 print(myfamily)
 # Output: {'child1': {'name': 'Emil', 'year': 2004}, 'child2': {'name': 'Tobias', 'year': 2007}, 'child3': {'name': 'Linus', 'year': 2011}}
+
+# Accessing Nested Dictionary Items
+# To access items from a nested dictionary, you use the name of dictionary, starting with the outer dictionary:
+myfamily = {
+    "child1": {
+        "name": "Emil", 
+        "year": 2004
+    },
+    "child2": {
+        "name": "Tobias",
+        "year": 2007
+    },
+    "child3": {
+        "name": "Linus",
+        "year": 2011
+    }
+}
+print(myfamily["child1"]["name"])
+# Output: Emil
