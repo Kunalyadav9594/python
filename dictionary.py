@@ -90,4 +90,66 @@ thisdict.pop("model")  # Removes the item with key 'model'
 print(thisdict)
 # Output: {'brand': 'Ford', 'year': 1964}
 
+# The popitem() method removes the last inserted item (in Python 3.7 and later)
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.popitem()
+print(thisdict) 
+# Output: {'brand': 'Ford', 'model': 'Mustang'}
+
+# The del keyword removes the item with the specified key
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+del thisdict["model"]
+print(thisdict)
+# Output: {'brand': 'Ford', 'year': 1964}
+
+# The del keyword can also delete the dictionary completely
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+del thisdict  # Deletes the entire dictionary
+# print(thisdict)  # This will raise a NameError since the dictionary no longer exists
+
+# The clear() method empties the dictionary
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+thisdict.clear()
+print(thisdict)  # Output: {}
+
+# Print all key names in the dictionary, one by one:
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+for x in thisdict:
+    print(x)
+# Output: brand
+# Output: model
+# Output: year
+
+# Print all values in the dictionary, one by one:
+for x in thisdict:
+    print(thisdict[x])  # Accessing the value using the key
+# Output: Ford
+# Output: Mustang
+# Output: 1964
+# Youcan also use the values() method to get all values in the dictionary
+for x in thisdict.values():
+    print(x)
+# Output: Ford
+# Output: Mustang
+# Output: 1964
 
