@@ -285,6 +285,27 @@ cars = {
 }
 cars.clear()  # Empties the dictionary
 print(cars)  # Output: {}
+# copy() - Returns a shallow copy of the dictionary
+cars = {
+    "brand": "Ford",
+    "model": "Mustang", 
+    "year": 1964
+}
+mycars = cars.copy()
+print(mycars)  # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+# fromkeys() - Returns a new dictionary with specified keys and values
+x= ('key1', 'key2', 'key3')
+y = 0
+thisdict = dict.fromkeys(x, y)  # Creates a dictionary with keys from x and value y
+print(thisdict)  # Output: {'key1': 0, 'key2': 0, 'key3': 0}
+# get() - Returns the value of the specified key
+cars = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(cars.get("model"))
+# Output: Mustang
 
 
 
