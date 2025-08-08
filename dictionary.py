@@ -186,3 +186,22 @@ mydict = dict(thisdict)
 print(mydict)
 # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
 
+# Nested Dictionaries
+# A dictionary can contain other dictionaries, which is called a nested dictionary
+myfamily = {
+    "child1": {
+        "name": "Emil",
+        "year": 2004
+    },
+    "child2": {
+        "name": "Tobias",
+        "year": 2007
+    },
+    "child3": {
+        "name": "Linus",
+        "year": 2011
+    }
+}
+print(myfamily)
+# Output: {'child1': {'name': 'Emil', 'year': 2004}, 'child2': {'name': 'Tobias', 'year': 2007}, 'child3': {'name': 'Linus', 'year': 2011}}
+
