@@ -152,4 +152,37 @@ for x in thisdict.values():
 # Output: Ford
 # Output: Mustang
 # Output: 1964
+# You can use the keys() method to return the keys of a dictionary
+for x in thisdict.keys():
+    print(x)
+# Output: brand
+# Output: model
+# Output: year
+# Loop through both keys and values, by using the items() method
+for x, y in thisdict.items():
+    print(x, y)
+# Output: brand Ford
+# Output: model Mustang
+# Output: year 1964
+# Copy a Dictionary
+# Make a copy of a dictionary with the copy() method
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+mydict = thisdict.copy()
+print(mydict)
+# Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+
+# Another way to make a copy is to use the dict() constructor
+# Make a copy of a dictionary with the dict() function
+thisdict = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+mydict = dict(thisdict)
+print(mydict)
+# Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
 
