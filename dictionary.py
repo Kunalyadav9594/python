@@ -307,6 +307,14 @@ cars = {
 print(cars.get("model"))
 # Output: Mustang
 
+# items() - Returns a view object that displays a list of a dictionary's key-value pairs
+cars = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(cars.items())  # Output: dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
+
 
 
 
