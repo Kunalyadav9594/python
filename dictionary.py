@@ -40,3 +40,13 @@ print(thisdict)
 thisdict = dict(brand="Ford", model="Mustang", year=1964)
 print(thisdict)
 # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964}
+# Accessing Dictionary Items
+print(thisdict["model"])  # Accessing the value associated with the key 'model'
+# Output: Mustang
+# There are two ways to access dictionary items:
+# 1. Using square brackets
+print(thisdict["year"])  # Accessing the value associated with the key 'year'
+# Output: 1964
+# 2. Using the get() method
+print(thisdict.get("brand"))  # Accessing the value associated with the key 'brand'
+# Output: Ford
