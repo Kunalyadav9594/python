@@ -314,6 +314,20 @@ cars = {
     "year": 1964
 }
 print(cars.items())  # Output: dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 1964)])
+# When an item in the dictionary changes value, the view object also gets updated
+cars["year"] = 2020
+print(cars.items())  # Output: dict_items([('brand', 'Ford'), ('model', 'Mustang'), ('year', 2020)])
+# keys() - Returns a view object that displays a list of all the keys in the dictionary
+cars = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+print(cars.keys())  # Output: dict_keys(['brand', 'model', 'year'])
+# When a new item is added, the view object also gets updated
+cars["color"] = "red"   
+print(cars.keys())  # Output: dict_keys(['brand', 'model', 'year', 'color'])
+
 
 
 
