@@ -346,6 +346,33 @@ car={
 x = car.popitem()
 print(x)  # Output: ('year', 1964) - removes the last inserted item in Python 3.7 and later
 
+# setdefault() - Returns the value of the specified key. If the key does not exist, insert the key with a specified value
+cars = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = cars.setdefault("color", "red")
+print(x)  # Output: red - adds 'color' key with value 'red' if it doesn't exist
+print(cars)  # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'red'}
+
+y = cars.setdefault("year", 2020)
+print(y)  # Output: 1964 - does not change the existing 'year' key
+print(cars)  # Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'red'}
+
+# Get the value of the 'color' item, if the 'color' item does not exist, insert color with the value 'white'
+cars = {
+    "brand": "Ford",    
+    "model": "Mustang",
+    "year": 1964
+}
+x = cars.setdefault("color", "white")
+print(x)
+# Output: white - adds 'color' key with value 'white' if it doesn't exist
+print(cars)
+# Output: {'brand': 'Ford', 'model': 'Mustang', 'year': 1964, 'color': 'white'}
+
+
 
 
 
