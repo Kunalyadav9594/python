@@ -328,7 +328,23 @@ print(cars.keys())  # Output: dict_keys(['brand', 'model', 'year'])
 cars["color"] = "red"   
 print(cars.keys())  # Output: dict_keys(['brand', 'model', 'year', 'color'])
 
+# pop() - Removes the item with the specified key and returns its value
+cars = {
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = cars.pop("model")  # Removes the item with key 'model' and returns its value
+print(x)  # Output: Mustang
 
+# The removed item is the return value of the popitem() method:
+car={
+    "brand": "Ford",
+    "model": "Mustang",
+    "year": 1964
+}
+x = car.popitem()
+print(x)  # Output: ('year', 1964) - removes the last inserted item in Python 3.7 and later
 
 
 
