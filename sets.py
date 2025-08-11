@@ -52,3 +52,11 @@ print("banana" not in set)
 set={'apple','banana','cherry'}
 set.add('orange')
 print(set)
+
+# update() method:
+# Add elements from tropical into this_set :
+this_set={'apple', 'banana', 'cherry'}
+tropical={'pineapple', 'mango', 'papaya'}
+
+this_set.update(tropical)
+print(this_set)
