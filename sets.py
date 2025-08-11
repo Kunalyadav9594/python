@@ -46,3 +46,9 @@ print("banana" in thisset)
 # Check if "banana" is NOT present in the set
 thisset={"apple","banana", "cherry"}
 print("banana" not in thisset)
+
+# Add set items
+# Add an item to a set, using the add() method.
+thisset={'apple','banana','cherry'}
+thisset.add('orange')
+print(thisset)
