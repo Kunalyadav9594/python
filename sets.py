@@ -60,3 +60,8 @@ tropical={'pineapple', 'mango', 'papaya'}
 
 this_set.update(tropical)
 print(this_set)
+
+# Remove set items
+this_set={'apple', 'banana', 'cherry'}
+this_set.remove('banana')
+print(this_set)
