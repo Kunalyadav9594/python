@@ -1,54 +1,54 @@
 # Create a set:
-thisset = {"apple", "banana", "cherry"}
-print(thisset)
+set = {"apple", "banana", "cherry"}
+print(set)
 # Output: {'apple', 'banana', 'cherry'}
 
 # Duplicate values will be ignored:
-thisset = {"apple", "banana", "cherry", "apple"}
-print(thisset)
+set = {"apple", "banana", "cherry", "apple"}
+print(set)
 # Output: {'apple', 'banana', 'cherry'}
 
 # True and 1 are considered the same:
-thisset = {"apple", "banana", "cherry", True, 1, 2}
-print(thisset)
+set = {"apple", "banana", "cherry", True, 1, 2}
+print(set)
 
 # False and 0 are considered the same:
-thisset = {"apple", "banana", "cherry", False, 0, 2}
-print(thisset)
+set = {"apple", "banana", "cherry", False, 0, 2}
+print(set)
 # Output: {'apple', 'banana', 'cherry', 2, False}
 
 # Get the length of a set:
-thisset = {"apple", "banana", "cherry"}
-print(len(thisset))
+set = {"apple", "banana", "cherry"}
+print(len(set))
 # Output: 3
 
 # Set items can be of any data type:
-thisset = {"apple", "banana", "cherry", 1, 2, 3}
-print(thisset)
+set = {"apple", "banana", "cherry", 1, 2, 3}
+print(set)
 # Output: {'apple', 'banana', 'cherry', 1, 2, 3}
 
 # type() can be used to check the type of a set:
-thisset = {"apple", "banana", "cherry"}
-print(type(thisset))
+set = {"apple", "banana", "cherry"}
+print(type(set))
 # Output: <class 'set'>
 
 # Access set items
 # Loop through the set, and print the values:
-thisset={"apple", "banana", "cherry"}
+set={"apple", "banana", "cherry"}
 
-for x in thisset:
+for x in set:
     print(x)
 
 # Check if "banana" is present in the set:
-thisset={"apple", "banana", "cherry"}
-print("banana" in thisset)
+set={"apple", "banana", "cherry"}
+print("banana" in set)
 
 # Check if "banana" is NOT present in the set
-thisset={"apple","banana", "cherry"}
-print("banana" not in thisset)
+set={"apple","banana", "cherry"}
+print("banana" not in set)
 
 # Add set items
 # Add an item to a set, using the add() method.
-thisset={'apple','banana','cherry'}
-thisset.add('orange')
-print(thisset)
+set={'apple','banana','cherry'}
+set.add('orange')
+print(set)
