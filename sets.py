@@ -77,3 +77,13 @@ print(this_set)
 this_set={'apple','banana','cherry'}
 this_set.remove('banana')
 print(this_set)
+
+# Remove 'banana' by using the discard() method.
+this_set={'apple', 'banana', 'cherry'}
+this_set.discard('banana')
+print(this_set)
+
+# Remove random item by using the pop() method:
+this_set={'apple', 'banana', 'cherry'}
+x=this_set.pop()
+print(x)
