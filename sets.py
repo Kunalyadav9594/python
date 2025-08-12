@@ -87,3 +87,8 @@ print(this_set)
 this_set={'apple', 'banana', 'cherry'}
 x=this_set.pop()
 print(x)
+
+# The clear() method empties the set:
+this_set={'apple','banana','cherry'}
+this_set.clear()
+print(this_set)
