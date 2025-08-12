@@ -161,3 +161,9 @@ set1={'apple','banana','cherry'}
 set2={'google','microsoft','apple'}
 set3=set1&set2
 print(set3)
+
+# The intersection_update method will also keep ONLY the duplicates, but it will change the original set instead of returning a new set.
+set1={'apple','banana','cherry'}
+set2={'google','microsoft','apple'}
+set1.intersection_update(set2)
+print(set1)
