@@ -71,3 +71,9 @@ this_set={'apple', 'banana', 'cherry'}
 my_list=['kiwi', 'orange']
 this_set.update(my_list)
 print(this_set)
+
+# Remove set items
+# Remove 'banana' by using the remove() method.
+this_set={'apple','banana','cherry'}
+this_set.remove('banana')
+print(this_set)
