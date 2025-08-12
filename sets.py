@@ -132,3 +132,17 @@ set4={'apple','banana','cherry'}
 
 my_set=set1|set2|set3|set4
 print(my_set)
+
+# join a set with tuple
+x={'a','b','c'}
+y={1,2,3}
+
+z=x.union(y)
+print(z)
+
+# update() method
+# The update() method inserts the items in set2 into set1
+set1={'a','b','c'}
+set2={1,2,3}
+set1.update(set2)
+print(set1)
