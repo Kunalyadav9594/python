@@ -146,3 +146,11 @@ set1={'a','b','c'}
 set2={1,2,3}
 set1.update(set2)
 print(set1)
+
+# Intersection
+# Keep only the duplicates
+# Join set1 and set2, but keep only the duplicates.
+set1={'apple','banana','cherry'}
+set2={1,2,'apple'}
+set3=set1.intersection(set2)
+print(set3)
