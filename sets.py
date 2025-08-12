@@ -65,3 +65,9 @@ print(this_set)
 this_set={'apple', 'banana', 'cherry'}
 this_set.remove('banana')
 print(this_set)
+
+# Add any element of a list to at set:
+this_set={'apple', 'banana', 'cherry'}
+my_list=['kiwi', 'orange']
+this_set.update(my_list)
+print(this_set)
