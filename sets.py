@@ -92,3 +92,34 @@ print(x)
 this_set={'apple','banana','cherry'}
 this_set.clear()
 print(this_set)
+
+# Loop items
+this_set={'apple', 'banana','cherry'}
+for x in this_set:
+    print(x)
+
+# Join sets:
+# union() methods:
+# Join set1 and set2 into a new  set:
+set1={'a', 'b', 'c'}
+set2={1,2,3}
+
+set3=set1.union(set2)
+print(set3)
+
+# You can use the | operator instead of the union() method, and you will get the same result.
+# Use | to join two sets.
+set1={'a', 'b', 'c'}
+set2={1, 2, 3}
+
+set3= set1 | set2
+print(set3)
+
+# Join multiple sets
+# Join multiple set with the union() method:
+set1={'a', 'b', 'c'}
+set2={1, 2, 3}
+set3={'John', 'Elena'}
+set4={'apple', 'banana', 'cherry'}
+my_set=set1.union(set2, set3, set4)
+print(my_set)
