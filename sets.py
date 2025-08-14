@@ -273,5 +273,11 @@ y={'google', 'microsoft', 'apple'}
 z=y.difference(x)
 print(z)
 
+# difference_update()
+x={'apple','banana','cherry'}
+y={'google','microsoft','apple'}
+x.difference(y)
+print(x)
+
 
 
