@@ -259,5 +259,13 @@ c={'cherry','microsoft','bluebird'}
 my_set=a.difference(b,c)
 print(my_set)
 
+# Join more than two sets with the - operator:
+a={'apple','banana','cherry'}
+b={'google','microsoft','apple'}
+c={'cherry','microsoft','bluebird'}
+
+my_set=a-b-c
+print(my_set)
+
 
 
