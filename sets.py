@@ -286,4 +286,11 @@ c={'cherry','micro','bluebird'}
 a.difference_update(b,c)
 print(a)
 
+# Join more than two sets with the -= operator.
+a={'apple','banana','cherry'}
+b={'google','microsoft','apple'}
+c={'cherry','micro','bluebird'}
+a-=b|c
+print(a)
+
 
