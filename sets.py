@@ -267,5 +267,11 @@ c={'cherry','microsoft','bluebird'}
 my_set=a-b-c
 print(my_set)
 
+# Reverse the example on the top of this page. Return a set that contains the items that only exist in set y,and not in set x:
+x={'apple', 'banana', 'cherry'}
+y={'google', 'microsoft', 'apple'}
+z=y.difference(x)
+print(z)
+
 
 
