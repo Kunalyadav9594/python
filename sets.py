@@ -215,6 +215,12 @@ set2={'banana', 'microsoft','apple'}
 set1.symmetric_difference_update(set2)
 print(set1)
 
+# Set Methods
+# Python has a set of built-in methods that you can use on sets.
+# Add an element to the fruits set:
+fruits={'apple', 'banana', 'cherry'}
+fruits.add('orange')
+print(fruits)
 
 
 
