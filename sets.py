@@ -233,6 +233,12 @@ fruits={'apple', 'banana', 'cherry'}
 fruits.clear()
 print(fruits)
 
+# copy() method.
+fruits={'apple','banana', 'cherry'}
+x=fruits.copy()
+print(x)
+
+
 
 
 
