@@ -293,4 +293,8 @@ c={'cherry','micro','bluebird'}
 a-=b|c
 print(a)
 
+# discard() Method:
+fruits={'apple', 'banana', 'cherry'}
+fruits.discard('banana')
+print(fruits)
 
