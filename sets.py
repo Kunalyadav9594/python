@@ -279,5 +279,11 @@ y={'google','microsoft','apple'}
 x.difference(y)
 print(x)
 
+# join more than two sets:
+a={'apple','banana','cherry'}
+b={'google','microsoft','apple'}
+c={'cherry','micro','bluebird'}
+a.difference_update(b,c)
+print(a)
 
 
