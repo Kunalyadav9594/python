@@ -245,6 +245,11 @@ y={'google','microsoft','apple'}
 z=x.difference(y)
 print(z)
 
+# Use - as a shortcut instead of difference():
+a={'apple', 'banana', 'cherry'}
+b={'google','microsoft','apple'}
+my_set=a-b
+print(my_set)
 
 
 
