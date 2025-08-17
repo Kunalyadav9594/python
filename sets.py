@@ -298,3 +298,36 @@ fruits={'apple', 'banana', 'cherry'}
 fruits.discard('banana')
 print(fruits)
 
+# intersection() method:
+# Return a set that contains the items that exist in both set x, and set y:
+x={'apple','banana','cherry'}
+y={'google','microsoft','apple'}
+z=x.intersection(y)
+print(z)
+
+# Use & as a shortcut instead of intersection():
+x={'apple','banana','cherry'}
+y={'google','microsoft','apple'}
+z=x & y
+print(z)
+
+# Join 3 sets, and a return a set with items that is present in all 3 sets:
+x={'a', 'b', 'c'}
+y={'c', 'd', 'e'}
+z={'f','g','c'}
+result=x.intersection(y,z)
+print(result)
+
+# intersection_update() [&=]
+# Remove the items that is not present in both x and y:
+x={'google','banana','cherry'}
+y={'google','microsoft','apple'}
+x.intersection_update(y)
+print(x)
+
+# Use &= as a shortcut instead of intersection_update()
+x={'apple','banana','cherry'}
+y={'google','microsoft','apple'}
+
+x&=y
+print(x)
