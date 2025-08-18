@@ -332,3 +332,11 @@ y={'google','microsoft','apple'}
 x&=y
 print(x)
 
+# Compare 3 sets, and return a set with items that is present in all 3 sets:
+x = {"a", "b", "c"}
+y = {"c", "d", "e"}
+z = {"f", "g", "c"}
+
+x &= y & z
+
+print(x)
