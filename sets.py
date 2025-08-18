@@ -340,3 +340,24 @@ z = {"f", "g", "c"}
 x &= y & z
 
 print(x)
+
+# isdisjoint() Method - Returns whether two sets have a intersection or not.
+# Return True if no items in set x is present in set y:
+x={'apple', 'banana', 'cherry'}
+y={'google','microsoft','facebook'}
+z=x.isdisjoint(y)
+print(z)
+
+# What if one or more items are present in both sets? 
+# In this example, 'apple' is present in both sets:
+x={'apple','banana','cherry'}
+y={'google','microsoft','apple'}
+z=x.isdisjoint(y)
+print(z)
+
+# issubset() MEthod - Returns True if all items of this set is present in another set.
+# Return True if all items in set x are present in set y:
+x={'a','b','c'}
+y={'f','e','d','c','b','a'}
+z=x.issubset(y)
+print(z)
