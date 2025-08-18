@@ -362,8 +362,30 @@ y={'f','e','d','c','b','a'}
 z=x.issubset(y)
 print(z)
 
-# USe <= a shortcut instead of issubset():
+# Use <= a shortcut instead of issubset():
 x={'a','b','c'}
 y={'f','e','d','c','b','a'}
 z=x<=y
+print(z)
+
+# What if not all items are present in the specified set?
+# Returns false if not all items in set x are present in set y:
+x={'a','b','c'}
+y={'f','e','d','c','b'}
+z=x.issubset(y)
+print(z)
+
+# < - Returns True is all items of this set is present in another, larger set.
+# Returns False even if all items in set x are present in set y:
+x={'a','b','c'}
+y={'c','b','a'}
+z= x < y
+print(z)
+
+# The < returns True if all items in the set exists in s specified larger set, otherwise it returns false.
+# set1 < set2
+# Returns True because all items of set x is present in the larger set y:
+x={'a','b','c'}
+y={'f','e','d','c','b','a'}
+z=x<y
 print(z)
