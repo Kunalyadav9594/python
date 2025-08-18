@@ -361,3 +361,9 @@ x={'a','b','c'}
 y={'f','e','d','c','b','a'}
 z=x.issubset(y)
 print(z)
+
+# USe <= a shortcut instead of issubset():
+x={'a','b','c'}
+y={'f','e','d','c','b','a'}
+z=x<=y
+print(z)
