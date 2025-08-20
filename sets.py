@@ -396,3 +396,18 @@ x={'f','e','d','c','b','a'}
 y={'a','b','c'}
 z=x.issuperset(y)
 print(z)
+
+# Use >= as a shortcut instead of issuperset():
+x={'f','e','d','c','b','a'}
+y={'a','b','c'}
+z=x>=y
+print(z)
+
+# What if not all items are present in the specified set?
+# Returns false if not all items in set x are present in set y:
+x={'f','e','d','c','b'}
+y={'a','b','c'}
+z=x.issuperset(y)
+print(z)    
+
+
