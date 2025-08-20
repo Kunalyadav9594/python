@@ -410,4 +410,22 @@ y={'a','b','c'}
 z=x.issuperset(y)
 print(z)    
 
+# Returns True if all items in set x are present in set y:
+x={'a','b','c'}
+y={'b','a'}
+z=x > y
+print(z)
+
+# The > returns True if all items in the set exists in a specified larger set, otherwise it returns false.
+# set1 > set2
+x={'c','b','a'}
+y={'b','a','c','d','e','f'}
+z=x>y
+print(z)
+
+# pop() Method - Removes a random item from the set.
+# Remove a random item from the set:
+x={'apple', 'banana', 'cherry'}
+x.pop()
+print(x)
 
