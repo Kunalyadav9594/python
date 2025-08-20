@@ -389,3 +389,10 @@ x={'a','b','c'}
 y={'f','e','d','c','b','a'}
 z=x<y
 print(z)
+
+# issuperset() Method [>=] - Returns True if all items of another set is present in this set.
+# Returns True if all items in set x is present in set y:
+x={'f','e','d','c','b','a'}
+y={'a','b','c'}
+z=x.issuperset(y)
+print(z)
