@@ -1,6 +1,6 @@
 # 🐍 Python Practice Set for AI & ML Job Preparation
 
-Welcome to my Python practice repository! This repo contains my hands-on exercises, code snippets, and mini-projects focused on mastering Python — a foundational skill for AI, Machine Learning, and Generative AI job roles.
+Welcome to my Python practice repository! This repo contains my hands-on exercises, code snippets, and mini-projects focused on mastering Python - a foundational skill for AI, Machine Learning, and Generative AI job roles.
 
 ---
 
