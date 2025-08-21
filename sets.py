@@ -429,3 +429,26 @@ x={'apple', 'banana', 'cherry'}
 x.pop()
 print(x)
 
+# remove() Method - Removes the specified item from the set.
+x={'apple', 'banana', 'cherry'}
+x.remove('banana')
+print(x)
+
+# symmetric_difference() Method - [^] Returns a set with the symmetric differences of two sets.
+# Return a set that contains all items from both sets, except items that are present in both sets.
+x={'apple', 'banana', 'cherry'}
+y={'google', 'microsoft', 'apple'}
+z=x.symmetric_difference(y)
+print(z)
+
+# symmetric_difference_update() Method - [^=] Returns a set with the symmetric differences of two sets, and updates the original set.
+x={'apple', 'banana', 'cherry'}
+y={'google', 'microsoft', 'apple'}
+x.symmetric_difference_update(y)
+print(x)
+
+# Use ^= as a shortcut instead of symmetric_difference_update():
+x={'google', 'banana', 'cherry'}
+y={'google', 'microsoft', 'apple'}
+x ^= y
+print(x)
