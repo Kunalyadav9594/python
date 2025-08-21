@@ -466,3 +466,16 @@ y={'f','d','a'}
 z={'c', 'd', 'e'}
 result=x.union(y, z)
 print(result)
+
+# update() Method - Updates the set with the union of this set and another set.
+# Update the set with the union of this set and another set:
+x={'apple', 'banana', 'cherry'}
+y={'google', 'microsoft', 'apple'}
+x.update(y)
+print(x)
+
+# Use |= as a shortcut instead of update():
+x={'apple', 'banana', 'cherry'}
+y={'google', 'microsoft', 'apple'}
+x |= y
+print(x)
