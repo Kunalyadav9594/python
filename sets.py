@@ -479,3 +479,17 @@ x={'apple', 'banana', 'cherry'}
 y={'google', 'microsoft', 'apple'}
 x |= y
 print(x)
+
+# Insert more than one set 
+x={'apple','banana','cherry'}
+y={'google','microsoft','apple'}
+z={'cherry', 'microsoft', 'bluebird'}
+x.update(y, z)
+print(x)
+
+# Join more than two sets with the |= operator:
+x={'apple','banana','cherry'}
+y={'google','microsoft','apple'}
+z={'cherry', 'microsoft', 'bluebird'}
+x |= y | z
+print(x)
