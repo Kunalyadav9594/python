@@ -452,3 +452,10 @@ x={'google', 'banana', 'cherry'}
 y={'google', 'microsoft', 'apple'}
 x ^= y
 print(x)
+
+# union() Method - Returns a set that contains all items from both sets, duplicates are excluded.
+# Return a set that contains all items from both sets:
+x={'apple', 'banana', 'cherry'}
+y={'google', 'microsoft', 'apple'}
+z=x.union(y)
+print(z)
