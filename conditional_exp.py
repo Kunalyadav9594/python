@@ -178,6 +178,29 @@ for x in fruits:
 # Looping through a string
 for x in "banana":
     print(x)
-    
 
+# The break statement - The break statement is used to exit a for loop prematurely.
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        break  # Exit the loop when x is "banana"
+    print(x)
 
+# Exit the loop when x is 'banana' , but this time the break comes before the print:
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        break  # Exit the loop when x is "banana"
+    print(x)
+
+# The continue statement - The continue statement is used to skip the current iteration of a loop and continue with the next iteration.
+fruits = ["apple", "banana", "cherry"]
+for x in fruits:
+    if x == "banana":
+        continue  # Skip the rest of the loop when x is "banana"
+    print(x)    
+
+# The range() function - The range() function is used to generate a sequence of numbers.
+# It can be used in for loops to iterate over a sequence of numbers.
+for x in range(6):
+    print(x) 
