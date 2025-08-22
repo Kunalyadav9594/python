@@ -145,7 +145,30 @@ while x < 9:
     print(x)
     x = x + 1  
 
+# Exit the loop when x is 3
+i = 1
+while i < 6:
+    print(i)
+    if i == 3:
+        break
+    i += 1
 
+# Continue - The continue statement is used to skip the current iteration of a loop and continue with the next iteration.
+# Continue to the next iteration of the loop when i is 3 
+i = 0
+while i<6:
+    i+=1
+    if i==3:
+        continue
+    print(i)  
+
+# The else block in a while loop - The else block in a while loop is executed when the condition of the while loop becomes false.
+i = 1
+while i < 6:
+    print(i)
+    i += 1
+else:
+    print("i is no longer less than 6")
 
 
 
