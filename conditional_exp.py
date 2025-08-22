@@ -204,3 +204,41 @@ for x in fruits:
 # It can be used in for loops to iterate over a sequence of numbers.
 for x in range(6):
     print(x) 
+
+# Using the start parameter
+for x in range(2, 6):
+    print(x)
+
+# The range() function defaults to incrementing by 1, but you can specify a different increment using the step parameter.
+for x in range(2, 30, 3):
+    print(x)
+
+
+
+# Else block in a for loop - The else block in a for loop is executed when the loop completes all iterations without encountering a break statement.
+for x in range(6):
+    print(x)
+else:
+    print("Loop completed without break")
+
+# Break the loop when x is 3, and see what happens with the else block
+for x in range(6):
+    if x == 3:break
+    print(x)
+else:
+    print("Loop completed without break")
+
+# Nested loops - A nested loop is a loop inside another loop.
+adj = ["red", "big", "tasty"]
+fruits = ["apple", "banana", "cherry"]
+for x in adj:
+    for y in fruits:
+        print(x, y)
+
+# The pass statement - The pass statement is a null operation; nothing happens when it executes.
+for x in [0, 1, 2]:
+    pass  # Do nothing, just a placeholder
+
+
+
+
