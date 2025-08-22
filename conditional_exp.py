@@ -67,3 +67,54 @@ b = 33
 c = 500
 if a > b or a > c:
     print("At least one of the conditions is True") 
+
+# Nested If - You can have an if statement inside another if statement.
+x=41
+
+if x > 10:
+    print("Above ten,")
+    if x > 20:
+        print("and also above 20!")
+    else:
+        print("but not above 20.")
+
+# The pass statement - The pass statement is a null operation; nothing happens when it executes.
+a=33
+b=200
+if b > a:
+    pass  # Do nothing, just a placeholder
+
+# Match Case Statement - Python 3.10 introduced the match-case statement, which is similar to switch-case statements in other languages.
+# It allows you to match a variable against different values and execute corresponding code blocks..
+day = 4
+match day:
+    case 1:
+        print("Monday")
+    case 2:
+        print("Tuesday")
+    case 3:
+        print("Wednesday")
+    case 4:
+        print("Thursday")   
+    case 5:
+        print("Friday") 
+    case 6:
+        print("Saturday")
+    case 7:
+        print("Sunday")                
+
+# Use the underscore character _ as the last case value if you want a code block to execute when there are not other matches.
+day =4
+match day:
+    case 6:
+        print("Today is Saturday")
+    case 7:
+        print("Today is Sunday")
+    case _:
+        print("Looking forward to the Weekend!")  # This will execute if no other case matches
+
+
+
+
+
+
