@@ -16,3 +16,8 @@ my_function("Linus")
 def my_function(fname, lname):
     print(fname + " " + lname)
 my_function("Emil", "Refsnes")
+
+# Arbitrary arguments, *args - If you do not know how many arguments that will be passed into your function, add a * before the parameter name.
+def my_function(*kids):
+    print("The youngest child is " + kids[2])
+my_function("Emil", "Tobias", "Linus")
