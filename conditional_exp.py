@@ -113,6 +113,38 @@ match day:
     case _:
         print("Looking forward to the Weekend!")  # This will execute if no other case matches
 
+# Combine values in a case using the | character.
+day = 3
+match day:
+    case 1 | 2 | 3 | 4 | 5:
+        print("It's a weekday")
+    case 6 | 7:
+        print("It's the weekend!")
+    case _:
+        print("Invalid day")
+
+# If statement as a Guards.
+# You can use an if statement as a guard in a case block to add an additional condition that must be met for that case to execute.
+month =5
+day =4
+match day:
+    case 1 | 2 | 3 | 4| 5 if month ==4:
+        print("Weekday in April")
+    case 1 | 2 | 3 | 4| 5 if month ==5:
+        print("Weekday in May")     
+
+# While loop
+i = 1
+while i < 6:
+    print(i)
+    i += 1  # i = i + 1
+
+# Print x as long as x is less than 9
+x = 0
+while x < 9:
+    print(x)
+    x = x + 1  
+
 
 
 
