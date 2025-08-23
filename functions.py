@@ -60,3 +60,8 @@ def my_function():
 def my_function(x, /):
     print(x)
 my_function(3)  # Valid
+
+# Without the , / you rae actually allowed to use keyword arguments even if the  function expects positional arguments.
+def my_function(x):
+    print(x)
+my_function(x=3)  # Valid
