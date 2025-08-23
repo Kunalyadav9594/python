@@ -48,3 +48,8 @@ print(fruits)
 fruits = ['apple', 'banana', 'cherry']
 fruits.clear()
 print(fruits)
+
+# copy()	-	Returns a copy of the list
+fruits = ['apple', 'banana', 'cherry']
+x = fruits.copy()
+print(x)
