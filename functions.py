@@ -77,3 +77,8 @@ def my_function(*, x):
     print(x)    
 my_function(x=3)  # Valid
 # my_function(3)  # Invalid - will raise a TypeError
+
+# Without the *, you are actually allowed to use positional arguments even if the function expects keyword arguments.
+def my_function(x):
+    print(x)
+my_function(3)  # Valid
