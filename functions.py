@@ -82,3 +82,10 @@ my_function(x=3)  # Valid
 def my_function(x):
     print(x)
 my_function(3)  # Valid
+
+# Combine Positional - only and Keyword - only arguments
+# You can combine the two argument types in the same function:
+# Any argument before the / must be positional only.
+def my_function(a, b, /, *,c,d):
+    print(a+b+c+d)
+my_function(5,6,c=7,d=8)  # Valid
