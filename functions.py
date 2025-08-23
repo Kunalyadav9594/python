@@ -65,3 +65,15 @@ my_function(3)  # Valid
 def my_function(x):
     print(x)
 my_function(x=3)  # Valid
+
+# But when adding the ,/ you will get an error if you try to send a keyword argument:
+def my_function(x, /):
+    print(x)
+# my_function(x=3)  # Invalid - will raise a TypeError
+# TypeError: my_function() got some positional-only arguments passed as keyword arguments: 'x'
+
+# Keyword - only arguments
+def my_function(*, x):
+    print(x)    
+my_function(x=3)  # Valid
+# my_function(3)  # Invalid - will raise a TypeError
