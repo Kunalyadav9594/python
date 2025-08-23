@@ -40,3 +40,13 @@ print('Simple addition:', add(2, 3))
 numbers = [1, 2, 3, 4, 5]
 squared = list(map(lambda x: x ** 2, numbers))
 print('squared numbers:', squared)
+
+# Lambda with filter() filters even numbers from a list.
+numbers = [1, 2, 3, 4, 5, 6]
+even_numbers = list(filter(lambda x: x % 2 == 0, numbers))
+print('Even numbers:', even_numbers)
+
+# Lambda as a sorting key sorts a list of tuples by the second element(age).
+people = [('Alice', 30), ('Bob', 25), ('Charlie', 35)]
+sorted_people = sorted(people, key=lambda person: person[1])
+print('Sorted by age:', sorted_people)
