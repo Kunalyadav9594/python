@@ -6,3 +6,7 @@ print(x(5))
 # Lambda functions can take any number of arguments:
 x = lambda a, b: a * b
 print(x(5, 6))
+
+# Summarize arguments a, b, and c and return the result:
+x = lambda a, b, c: a + b + c
+print(x(5, 6, 2))
