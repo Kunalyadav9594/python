@@ -31,3 +31,20 @@ print(cars)
 cars = ["Ford", "Volvo", "BMW"]
 cars.pop(1)
 print(cars)
+
+# Array methods()
+# append()	-	Adds an element at the end of the list
+fruits = ['apple', 'banana', 'cherry']
+fruits.append('orange')
+print(fruits)
+
+# Add list to the list
+fruits = ['apple', 'banana', 'cherry']
+more_fruits = ['orange', 'mango', 'grapes']
+fruits.extend(more_fruits)
+print(fruits)
+
+# clear()	-	Removes all the elements from the list
+fruits = ['apple', 'banana', 'cherry']
+fruits.clear()
+print(fruits)
