@@ -31,3 +31,12 @@ mytripler = my_function(3)
 
 print(mydoubler(11))
 print(mytripler(11))
+
+# Simple lambda for addition: A basic lambda assigned to a variable and called.
+add = lambda x, y: x + y
+print('Simple addition:', add(2, 3))
+
+# Lambda with map() squares each number in a list. map() applies the lambda to every element.
+numbers = [1, 2, 3, 4, 5]
+squared = list(map(lambda x: x ** 2, numbers))
+print('squared numbers:', squared)
