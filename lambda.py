@@ -50,3 +50,9 @@ print('Even numbers:', even_numbers)
 people = [('Alice', 30), ('Bob', 25), ('Charlie', 35)]
 sorted_people = sorted(people, key=lambda person: person[1])
 print('Sorted by age:', sorted_people)
+
+# Lambda with reduce() computes the product of all numbers in a list(requires importing reduce from functools).
+from functools import reduce
+numbers = [1, 2, 3, 4]
+product = reduce(lambda x, y: x * y, numbers)
+print('Product of numbers:', product)
