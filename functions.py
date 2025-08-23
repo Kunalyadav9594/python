@@ -55,3 +55,8 @@ print(my_function(3))
 # The pass Statement
 def my_function():
     pass  # Used when a function is required syntactically but you do not want any code to be executed.
+
+# Positional - only arguments
+def my_function(x, /):
+    print(x)
+my_function(3)  # Valid
