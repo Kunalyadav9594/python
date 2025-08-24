@@ -63,3 +63,20 @@ print(x)
 points= [1,4,2,9,7,8,9,3,1]
 x = points.count(9)
 print(x)
+
+# extend()	-	Add the elements of a list (or any iterable), to the end of the current list
+fruits = ['apple', 'banana', 'cherry']
+cars = ['Ford', 'Volvo', 'BMW']
+fruits.extend(cars)
+print(fruits)
+
+# Add a tuple to the fruits list.
+fruits = ['apple', 'banana', 'cherry']
+points = (1, 4, 5, 9)
+fruits.extend(points)
+print(fruits)
+
+# index()	-	Returns the index of the first element with the specified value
+fruits = ['apple', 'banana', 'cherry']
+x = fruits.index('cherry')
+print(x)
