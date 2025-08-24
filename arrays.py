@@ -80,3 +80,8 @@ print(fruits)
 fruits = ['apple', 'banana', 'cherry']
 x = fruits.index('cherry')
 print(x)
+
+# What is the position of the value 32.
+points = [4,55,64,32,16,32]
+x = points.index(32)
+print(x)
