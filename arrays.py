@@ -58,3 +58,8 @@ print(x)
 fruits = ['apple', 'banana', 'cherry', 'apple'] 
 x = fruits.count('apple')
 print(x)
+
+# Return the number of times the value 9 appears in the list.
+points= [1,4,2,9,7,8,9,3,1]
+x = points.count(9)
+print(x)
