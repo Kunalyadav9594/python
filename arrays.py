@@ -85,3 +85,8 @@ print(x)
 points = [4,55,64,32,16,32]
 x = points.index(32)
 print(x)
+
+# Find the position of 'cherry', but start the search at position 4.
+fruits = ['apple', 'banana', 'cherry', 'orange', 'kiwi', 'melon', 'mango','cherry']
+x = fruits.index('cherry', 4)
+print(x)
